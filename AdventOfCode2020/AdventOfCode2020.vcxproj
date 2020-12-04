@@ -141,17 +141,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AdventOfCode2020.cpp" />
-    <ClCompile Include="Day01.cpp" />
-    <ClCompile Include="Day02.cpp" />
-    <ClCompile Include="Day03.cpp" />
+    <ClCompile Include="Days\Day01.cpp" />
+    <ClCompile Include="Days\Day02.cpp" />
+    <ClCompile Include="Days\Day03.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="advent.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Day1.txt" />
-    <Text Include="Day2.txt" />
-    <Text Include="Day3.txt" />
+    <Text Include="Input\Day1.txt" />
+    <Text Include="Input\Day2.txt" />
+    <Text Include="Input\Day3.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

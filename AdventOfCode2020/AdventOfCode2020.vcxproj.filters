@@ -18,24 +18,24 @@
     <ClCompile Include="AdventOfCode2020.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Day01.cpp">
+    <ClCompile Include="Days\Day01.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Day02.cpp">
+    <ClCompile Include="Days\Day02.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Day03.cpp">
+    <ClCompile Include="Days\Day03.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Day1.txt">
+    <Text Include="Input\Day1.txt">
       <Filter>Resource Files</Filter>
     </Text>
-    <Text Include="Day2.txt">
+    <Text Include="Input\Day2.txt">
       <Filter>Resource Files</Filter>
     </Text>
-    <Text Include="Day3.txt">
+    <Text Include="Input\Day3.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>
