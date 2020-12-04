@@ -144,6 +144,7 @@
     <ClCompile Include="Days\Day01.cpp" />
     <ClCompile Include="Days\Day02.cpp" />
     <ClCompile Include="Days\Day03.cpp" />
+    <ClCompile Include="Days\Day04.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Core\advent.h" />
@@ -152,6 +153,7 @@
     <Text Include="Input\Day1.txt" />
     <Text Include="Input\Day2.txt" />
     <Text Include="Input\Day3.txt" />
+    <Text Include="Input\Day4.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
