@@ -140,13 +140,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AdventOfCode2020.cpp" />
+    <ClCompile Include="Core\AdventOfCode2020.cpp" />
     <ClCompile Include="Days\Day01.cpp" />
     <ClCompile Include="Days\Day02.cpp" />
     <ClCompile Include="Days\Day03.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="advent.h" />
+    <ClInclude Include="Core\advent.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Input\Day1.txt" />
