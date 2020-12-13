@@ -5,7 +5,7 @@
 
 int main()
 {
-    std::vector<std::string> inputs = linesFromFile<std::string>("Input/Day6.txt");
-    std::cout << "Day 6 star 1: " << day6star1(inputs) << std::endl;
-    std::cout << "Day 6 star 2: " << day6star2(inputs) << std::endl;
+    std::vector<std::string> inputs = linesFromFile<std::string>("Input/Day8.txt");
+    std::cout << "Star 1: " << day8star1(inputs) << std::endl;
+    std::cout << "Star 2: " << day8star2(inputs) << std::endl;
 }
