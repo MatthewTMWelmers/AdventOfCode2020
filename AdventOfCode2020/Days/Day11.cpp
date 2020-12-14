@@ -4,11 +4,13 @@
 
 class Seating {
 public:
-	Seating(std::vector<std::string> inputs) {
+	Seating(std::vector<std::string> inputs, int tolerance, int observeFloor) {
 		board = inputs;
 		width = board[0].length();
 		height = board.size();
 		changed = 1;
+		this->tolerance = tolerance;
+		this->observeFloor = observeFloor;
 	}
 
 	int isStable() {
@@ -36,7 +38,7 @@ public:
 
 	char nextChar(char curr, int surround) {
 		if (curr == 'L' && surround == 0) return '#';
-		if (curr == '#' && surround > 4) return 'L';
+		if (curr == '#' && surround > tolerance) return 'L';
 		return curr;
 	}
 
@@ -60,7 +62,7 @@ public:
 
 		while (x >= 0 && x < height && y >= 0 && y < width) {
 			char chair = board[x][y];
-			if (chair != '.') {
+			if (observeFloor || chair != '.') {
 				return chair == '#';
 			}
 
@@ -87,21 +89,21 @@ private:
 	int width;
 	int height;
 	int changed;
+	int observeFloor;
+	int tolerance;
 };
 
-//logic removed due to the class above being changed for star 2 logic
 int day11star1(std::vector<std::string> inputs) {
-	//Seating s(inputs);
-	//while (!s.isStable()) {
-	//	s.evolve();
-	//}
+	Seating s(inputs, 3, 1);
+	while (!s.isStable()) {
+		s.evolve();
+	}
 
-	//return s.occupied();
-	return 2441;
+	return s.occupied();
 }
 
 int day11star2(std::vector<std::string> inputs) {
-	Seating s(inputs);
+	Seating s(inputs, 4, 0);
 	while (!s.isStable()) {
 		s.evolve();
 	}
