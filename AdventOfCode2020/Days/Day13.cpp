@@ -48,7 +48,6 @@ long long day13star2(std::vector<std::string> inputs) {
 			if (busses[i] != 0) {
 				if ((ts + i) % busses[i] != 0) {
 					valid = 0;
-					break;
 				}
 				else if(addl % busses[i] != 0) {
 					addl = boost::math::lcm(addl, (long long)busses[i]);
