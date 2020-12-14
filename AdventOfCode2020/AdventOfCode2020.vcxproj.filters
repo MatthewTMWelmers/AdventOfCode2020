@@ -78,7 +78,6 @@
     <Text Include="Input\Day11.txt" />
     <Text Include="Input\Day12.txt" />
     <Text Include="Input\Day13.txt" />
-    <Text Include="Input\Day13test.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Core\advent.h">
