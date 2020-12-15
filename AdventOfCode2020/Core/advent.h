@@ -49,6 +49,9 @@ long long day13star2(std::vector<std::string> inputs);
 long long day14star1(std::vector<std::string> inputs);
 long long day14star2(std::vector<std::string> inputs);
 
+int day15star1(std::vector<int> inputs);
+int day15star2(std::vector<int> inputs);
+
 template<class T>
 std::vector<T> linesFromFile(std::string fileName) {
     std::string line;
@@ -64,4 +67,17 @@ std::vector<T> linesFromFile(std::string fileName) {
     }
 
     return inputs;
+}
+
+std::vector<int> day15inputs() {
+    std::vector<int> in;
+    in.push_back(5);
+    in.push_back(1);
+    in.push_back(9);
+    in.push_back(18);
+    in.push_back(13);
+    in.push_back(8);
+    in.push_back(0);
+
+    return in;
 }

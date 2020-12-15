@@ -155,6 +155,7 @@
     <ClCompile Include="Days\Day12.cpp" />
     <ClCompile Include="Days\Day13.cpp" />
     <ClCompile Include="Days\Day14.cpp" />
+    <ClCompile Include="Days\Day15.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Core\advent.h" />
