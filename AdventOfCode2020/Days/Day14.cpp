@@ -33,8 +33,8 @@ std::vector<long long> applyFloatingMask(std::string mask, long long addr) {
 			addrs.clear();
 
 			for (long long val : addrsCpy) {
-				addrs.push_back(val & ~(1LL << i));
-				addrs.push_back(val | (1LL << i));
+				addrs.push_back(val);
+				addrs.push_back(val ^ (1LL << i));
 			}
 		}
 	}
