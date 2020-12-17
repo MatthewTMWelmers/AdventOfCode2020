@@ -140,6 +140,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Classes\BagRule.cpp" />
+    <ClCompile Include="Classes\LifeCube.cpp" />
+    <ClCompile Include="Classes\LifeCube4.cpp" />
+    <ClCompile Include="Classes\Passport.cpp" />
+    <ClCompile Include="Classes\Program.cpp" />
+    <ClCompile Include="Classes\Seating.cpp" />
+    <ClCompile Include="Classes\Ticket.cpp" />
+    <ClCompile Include="Classes\TobogganMap.cpp" />
     <ClCompile Include="Core\AdventOfCode2020.cpp" />
     <ClCompile Include="Days\Day01.cpp" />
     <ClCompile Include="Days\Day02.cpp" />
@@ -160,7 +168,15 @@
     <ClCompile Include="Days\Day17.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ClassHeaders\BagRule.h" />
+    <ClInclude Include="ClassHeaders\Passport.h" />
+    <ClInclude Include="ClassHeaders\Program.h" />
+    <ClInclude Include="ClassHeaders\Seating.h" />
+    <ClInclude Include="ClassHeaders\Ticket.h" />
+    <ClInclude Include="ClassHeaders\TobogganMap.h" />
+    <ClInclude Include="ClassHeaders\LifeSpace.h" />
     <ClInclude Include="Core\advent.h" />
+    <ClInclude Include="Core\Util.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Input\Day1.txt" />

@@ -1,7 +1,6 @@
 #include <vector>
 #include <string> 
 
-
 int day12star1(std::vector<std::string> inputs) {
 	std::vector<std::pair<char, char>> rots;
 	rots.push_back(std::pair<char, char>('N', 'E'));

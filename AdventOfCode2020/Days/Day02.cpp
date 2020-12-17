@@ -2,9 +2,8 @@
 #include <string>
 #include <regex>
 
-class PwRule {
-public:
-	PwRule(std::string rule) {
+struct PasswordRule {
+	PasswordRule(std::string rule) {
 		std::regex regex("^(\\d+)-(\\d+) (\\w): (\\w+)$");
 		std::smatch match;
 		std::regex_match(rule, match, regex);
@@ -24,7 +23,7 @@ int day2star1(std::vector<std::string> inputs) {
 	int result = 0;
 
 	for (std::string pass : inputs) {
-		PwRule rule(pass);
+		PasswordRule rule(pass);
 
 		size_t count = 0;
 		for (char c : rule.pw) {
@@ -42,7 +41,7 @@ int day2star2(std::vector<std::string> inputs) {
 	int result = 0;
 
 	for (std::string pass : inputs) {
-		PwRule rule(pass);
+		PasswordRule rule(pass);
 
 		result += (rule.pw[rule.min - 1] == rule.c) ^ (rule.pw[rule.max - 1] == rule.c);
 	}

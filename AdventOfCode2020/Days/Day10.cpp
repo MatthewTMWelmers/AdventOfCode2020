@@ -2,6 +2,26 @@
 #include <queue>
 #include <algorithm>
 
+long long subCombos(std::vector<int> diffs) {
+	if (diffs.size() < 2) {
+		return 1;
+	}
+
+	int back = diffs.back();
+	diffs.pop_back();
+
+	long long partial = subCombos(diffs);
+	if (back + diffs.back() < 4) {
+		int back2 = diffs.back();
+		diffs.pop_back();
+		diffs.push_back(back + back2);
+		return partial + subCombos(diffs);
+	}
+	else {
+		return partial;
+	}
+}
+
 int day10star1(std::vector<int> inputs) {
 	inputs.push_back(0);
 	std::sort(inputs.begin(), inputs.end());
@@ -21,26 +41,6 @@ int day10star1(std::vector<int> inputs) {
 	}
 
 	return ones * threes;
-}
-
-long long subCombos(std::vector<int> diffs) {
-	if (diffs.size() < 2) {
-		return 1;
-	}
-
-	int back = diffs.back();
-	diffs.pop_back();
-
-	long long partial = subCombos(diffs);
-	if (back + diffs.back() < 4) {
-		int back2 = diffs.back();
-		diffs.pop_back();
-		diffs.push_back(back + back2);
-		return partial + subCombos(diffs);
-	}
-	else {
-		return partial;
-	}
 }
 
 long long day10star2(std::vector<int> inputs) {
