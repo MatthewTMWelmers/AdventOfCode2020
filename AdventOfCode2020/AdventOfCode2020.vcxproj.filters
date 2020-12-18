@@ -93,6 +93,12 @@
     <ClCompile Include="Classes\Seating.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Days\Day18.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\OpTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Input\Day1.txt">
@@ -117,6 +123,7 @@
     <Text Include="Input\Day14.txt" />
     <Text Include="Input\Day16.txt" />
     <Text Include="Input\Day17.txt" />
+    <Text Include="Input\Day18.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Core\advent.h">
@@ -144,6 +151,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ClassHeaders\Seating.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassHeaders\OpTree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
