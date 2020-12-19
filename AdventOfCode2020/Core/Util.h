@@ -50,10 +50,14 @@ std::vector<T> split(std::string s, std::string regexStr) {
     std::smatch match;
 
     while (std::regex_search(s, match, regex)) {
-        vals.push_back(boost::lexical_cast<T>(match.prefix()));
+        if (match.prefix().length() > 0) {
+            vals.push_back(boost::lexical_cast<T>(match.prefix()));
+        }
         s = match.suffix();
     }
 
-    vals.push_back(boost::lexical_cast<T>(s));
+    if (s.length() > 0) {
+        vals.push_back(boost::lexical_cast<T>(s));
+    }
     return vals;
 }

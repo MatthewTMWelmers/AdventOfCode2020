@@ -53,6 +53,9 @@ int day17star2(std::vector<std::string> inputs);
 long long day18star1(std::vector<std::string> inputs);
 long long  day18star2(std::vector<std::string> inputs);
 
+int day19star1(std::vector<std::string> inputs);
+int day19star2(std::vector<std::string> inputs);
+
 std::vector<int> day15inputs() {
     std::vector<int> in;
     in.push_back(5);

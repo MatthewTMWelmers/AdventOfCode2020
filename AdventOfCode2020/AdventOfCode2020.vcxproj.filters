@@ -99,6 +99,12 @@
     <ClCompile Include="Classes\OpTree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Days\Day19.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\MatchRule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Input\Day1.txt">
@@ -124,6 +130,7 @@
     <Text Include="Input\Day16.txt" />
     <Text Include="Input\Day17.txt" />
     <Text Include="Input\Day18.txt" />
+    <Text Include="Input\Day19.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Core\advent.h">
@@ -154,6 +161,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ClassHeaders\OpTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassHeaders\MatchRule.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
