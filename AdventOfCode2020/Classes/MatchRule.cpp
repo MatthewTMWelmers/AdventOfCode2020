@@ -5,7 +5,6 @@
 #include "../ClassHeaders/MatchRule.h"
 
 
-
 MatchRule::MatchRule(std::string rule) {
 	std::vector<std::string> ruleParts = split<std::string>(rule, ":");
 	int ruleNum = stoi(ruleParts[0]);

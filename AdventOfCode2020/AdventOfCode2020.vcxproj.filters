@@ -105,6 +105,12 @@
     <ClCompile Include="Classes\MatchRule.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Days\Day20.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\PictureTile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Input\Day1.txt">
@@ -131,6 +137,7 @@
     <Text Include="Input\Day17.txt" />
     <Text Include="Input\Day18.txt" />
     <Text Include="Input\Day19.txt" />
+    <Text Include="Input\Day20.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Core\advent.h">
@@ -164,6 +171,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ClassHeaders\MatchRule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassHeaders\PictureTile.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

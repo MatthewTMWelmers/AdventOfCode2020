@@ -61,3 +61,31 @@ std::vector<T> split(std::string s, std::string regexStr) {
     }
     return vals;
 }
+
+static void rotate(std::vector<std::string>* vec) {
+    std::vector<std::string> rotVec;
+    for (size_t i = 0; i < (*vec)[0].size(); i++) {
+        rotVec.push_back("");
+        for (size_t j = 0; j < vec->size(); j++) {
+            rotVec[i] += (*vec)[vec->size() - j - 1][i];
+        }
+    }
+
+    *vec = rotVec;
+}
+
+static void ccRotate(std::vector<std::string>* vec) {
+    rotate(vec);
+    rotate(vec);
+    rotate(vec);
+}
+
+static int parseStringAsBinary(std::string s, char oneVal) {
+    int binary = 0;
+    for (char c : s) {
+        binary <<= 1;
+        binary += (c == oneVal) ? 1 : 0;
+    }
+
+    return binary;
+}

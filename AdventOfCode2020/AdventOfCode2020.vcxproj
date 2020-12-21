@@ -146,6 +146,7 @@
     <ClCompile Include="Classes\MatchRule.cpp" />
     <ClCompile Include="Classes\OpTree.cpp" />
     <ClCompile Include="Classes\Passport.cpp" />
+    <ClCompile Include="Classes\PictureTile.cpp" />
     <ClCompile Include="Classes\Program.cpp" />
     <ClCompile Include="Classes\Seating.cpp" />
     <ClCompile Include="Classes\Ticket.cpp" />
@@ -170,12 +171,14 @@
     <ClCompile Include="Days\Day17.cpp" />
     <ClCompile Include="Days\Day18.cpp" />
     <ClCompile Include="Days\Day19.cpp" />
+    <ClCompile Include="Days\Day20.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ClassHeaders\BagRule.h" />
     <ClInclude Include="ClassHeaders\MatchRule.h" />
     <ClInclude Include="ClassHeaders\OpTree.h" />
     <ClInclude Include="ClassHeaders\Passport.h" />
+    <ClInclude Include="ClassHeaders\PictureTile.h" />
     <ClInclude Include="ClassHeaders\Program.h" />
     <ClInclude Include="ClassHeaders\Seating.h" />
     <ClInclude Include="ClassHeaders\Ticket.h" />
@@ -196,6 +199,7 @@
     <Text Include="Input\Day18.txt" />
     <Text Include="Input\Day19.txt" />
     <Text Include="Input\Day2.txt" />
+    <Text Include="Input\Day20.txt" />
     <Text Include="Input\Day3.txt" />
     <Text Include="Input\Day4.txt" />
     <Text Include="Input\Day5.txt" />
