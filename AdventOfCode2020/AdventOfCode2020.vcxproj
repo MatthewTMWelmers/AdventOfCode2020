@@ -172,6 +172,7 @@
     <ClCompile Include="Days\Day18.cpp" />
     <ClCompile Include="Days\Day19.cpp" />
     <ClCompile Include="Days\Day20.cpp" />
+    <ClCompile Include="Days\Day21.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ClassHeaders\BagRule.h" />
@@ -200,6 +201,7 @@
     <Text Include="Input\Day19.txt" />
     <Text Include="Input\Day2.txt" />
     <Text Include="Input\Day20.txt" />
+    <Text Include="Input\Day21.txt" />
     <Text Include="Input\Day3.txt" />
     <Text Include="Input\Day4.txt" />
     <Text Include="Input\Day5.txt" />
