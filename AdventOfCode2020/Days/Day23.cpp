@@ -6,7 +6,7 @@ struct Cup {
 		this->val = val;
 	}
 
-	Cup* next;
+	Cup* next = NULL;
 	long long val;
 };
 
