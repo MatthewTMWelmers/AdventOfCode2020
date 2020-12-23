@@ -24,54 +24,22 @@ Cup* iter(Cup* current, Cup** cupList, int max) {
 	return current->next;
 }
 
-std::string day23star1(std::string input) {
-	Cup** cupList = (Cup**)malloc(10 * sizeof(Cup*));
-	if (!cupList) {
-		return 0;
-	}
-
-	Cup* current = new Cup(input[0] - '0');
-	cupList[current->val - 1] = current;
-	Cup* last = current;
-	for (size_t i = 1; i < 9; i++) {
-		Cup* prev = last;
-		last = new Cup(input[i] - '0');
-		prev->next = last;
-		cupList[last->val - 1] = last;
-	}
-	last->next = current;
-
-	for (size_t i = 0; i < 100; i++) {
-		current = iter(current, cupList, 9);
-	}
-
-	current = cupList[0];
-	std::string result = "";
-	for (size_t i = 0; i < 8; i++) {
-		current = current->next;
-		result += std::to_string(current->val);
-	}
-
-	return result;
-}
-
-
-long long day23star2(std::string input) {
+Cup* cupGame(std::string init, size_t maxCup, size_t iterations) {
 	Cup** cupList = (Cup**)malloc(10000000 * sizeof(Cup*));
 	if (!cupList) {
 		return 0;
 	}
 
-	Cup* current = new Cup(input[0] - '0');
+	Cup* current = new Cup(init[0] - '0');
 	cupList[current->val - 1] = current;
 	Cup* last = current;
 	for (size_t i = 1; i < 9; i++) {
 		Cup* prev = last;
-		last = new Cup(input[i] - '0');
+		last = new Cup(init[i] - '0');
 		prev->next = last;
 		cupList[last->val - 1] = last;
 	}
-	for (size_t i = 10; i <= 1000000; i++) {
+	for (size_t i = 10; i <= maxCup; i++) {
 		Cup* prev = last;
 		last = new Cup(i);
 		prev->next = last;
@@ -79,10 +47,39 @@ long long day23star2(std::string input) {
 	}
 	last->next = current;
 
-	for (size_t i = 0; i < 10000000; i++) {
-		current = iter(current, cupList, 1000000);
+	for (size_t i = 0; i < iterations; i++) {
+		current = iter(current, cupList, maxCup);
 	}
 
-	current = cupList[0];
-	return current->next->val * current->next->next->val;
+	Cup* cup0 = cupList[0];
+	free(cupList);
+	return cup0;
+}
+
+void cleanup(Cup* cup, size_t maxCup) {
+	for (size_t i = 0; i < maxCup; i++) {
+		Cup* curr = cup;
+		cup = cup->next;
+		delete curr;
+	}
+}
+
+std::string day23star1(std::string input) {
+	Cup* current = cupGame(input, 9, 100);
+	std::string result = "";
+	for (size_t i = 0; i < 8; i++) {
+		current = current->next;
+		result += std::to_string(current->val);
+	}
+
+	cleanup(current, 9);
+	return result;
+}
+
+
+long long day23star2(std::string input) {
+	Cup* current = cupGame(input, 1000000, 10000000);
+	long long result = current->next->val * current->next->next->val;
+	cleanup(current, 1000000);
+	return result;
 }
