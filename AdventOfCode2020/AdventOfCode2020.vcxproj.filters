@@ -114,7 +114,10 @@
     <ClCompile Include="Days\Day21.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Days\Source.cpp">
+    <ClCompile Include="Days\Day22.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Days\Day23.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -173,7 +173,8 @@
     <ClCompile Include="Days\Day19.cpp" />
     <ClCompile Include="Days\Day20.cpp" />
     <ClCompile Include="Days\Day21.cpp" />
-    <ClCompile Include="Days\Source.cpp" />
+    <ClCompile Include="Days\Day22.cpp" />
+    <ClCompile Include="Days\Day23.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ClassHeaders\BagRule.h" />
