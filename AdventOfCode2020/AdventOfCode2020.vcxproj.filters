@@ -120,6 +120,9 @@
     <ClCompile Include="Days\Day23.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Days\Day24.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Input\Day1.txt">
@@ -149,6 +152,7 @@
     <Text Include="Input\Day20.txt" />
     <Text Include="Input\Day21.txt" />
     <Text Include="Input\Day22.txt" />
+    <Text Include="Input\Day24.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Core\advent.h">

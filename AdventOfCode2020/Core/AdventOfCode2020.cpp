@@ -7,28 +7,29 @@
 
 int main()
 {
-    //std::vector<int> inputs1 = linesFromFile<int>("Input/Day1.txt");
-    //std::vector<std::string> inputs2 = linesFromFile<std::string>("Input/Day2.txt");
-    //std::vector<std::string> inputs3 = linesFromFile<std::string>("Input/Day3.txt");
-    //std::vector<std::string> inputs4 = linesFromFile<std::string>("Input/Day4.txt");
-    //std::vector<std::string> inputs5 = linesFromFile<std::string>("Input/Day5.txt");
-    //std::vector<std::string> inputs6 = linesFromFile<std::string>("Input/Day6.txt");
-    //std::vector<std::string> inputs7 = linesFromFile<std::string>("Input/Day7.txt");
-    //std::vector<std::string> inputs8 = linesFromFile<std::string>("Input/Day8.txt");
-    //std::vector<long long> inputs9 = linesFromFile<long long>("Input/Day9.txt");
-    //std::vector<int> inputs10 = linesFromFile<int>("Input/Day10.txt");
-    //std::vector<std::string> inputs11 = linesFromFile<std::string>("Input/Day11.txt");
-    //std::vector<std::string> inputs12 = linesFromFile<std::string>("Input/Day12.txt");
-    //std::vector<std::string> inputs13 = linesFromFile<std::string>("Input/Day13.txt");
-    //std::vector<std::string> inputs14 = linesFromFile<std::string>("Input/Day14.txt");
-    //std::vector<int> inputs15 = day15inputs();
-    //std::vector<std::string> inputs16 = linesFromFile<std::string>("Input/Day16.txt");
-    //std::vector<std::string> inputs17 = linesFromFile<std::string>("Input/Day17.txt");
-    //std::vector<std::string> inputs18 = linesFromFile<std::string>("Input/Day18.txt");
-    //std::vector<std::string> inputs19 = linesFromFile<std::string>("Input/Day19.txt");
-    //std::vector<std::string> inputs20 = linesFromFile<std::string>("Input/Day20.txt");
-    //std::vector<std::string> inputs21 = linesFromFile<std::string>("Input/Day21.txt");
+    std::vector<int> inputs1 = linesFromFile<int>("Input/Day1.txt");
+    std::vector<std::string> inputs2 = linesFromFile<std::string>("Input/Day2.txt");
+    std::vector<std::string> inputs3 = linesFromFile<std::string>("Input/Day3.txt");
+    std::vector<std::string> inputs4 = linesFromFile<std::string>("Input/Day4.txt");
+    std::vector<std::string> inputs5 = linesFromFile<std::string>("Input/Day5.txt");
+    std::vector<std::string> inputs6 = linesFromFile<std::string>("Input/Day6.txt");
+    std::vector<std::string> inputs7 = linesFromFile<std::string>("Input/Day7.txt");
+    std::vector<std::string> inputs8 = linesFromFile<std::string>("Input/Day8.txt");
+    std::vector<long long> inputs9 = linesFromFile<long long>("Input/Day9.txt");
+    std::vector<int> inputs10 = linesFromFile<int>("Input/Day10.txt");
+    std::vector<std::string> inputs11 = linesFromFile<std::string>("Input/Day11.txt");
+    std::vector<std::string> inputs12 = linesFromFile<std::string>("Input/Day12.txt");
+    std::vector<std::string> inputs13 = linesFromFile<std::string>("Input/Day13.txt");
+    std::vector<std::string> inputs14 = linesFromFile<std::string>("Input/Day14.txt");
+    std::vector<int> inputs15 = day15inputs();
+    std::vector<std::string> inputs16 = linesFromFile<std::string>("Input/Day16.txt");
+    std::vector<std::string> inputs17 = linesFromFile<std::string>("Input/Day17.txt");
+    std::vector<std::string> inputs18 = linesFromFile<std::string>("Input/Day18.txt");
+    std::vector<std::string> inputs19 = linesFromFile<std::string>("Input/Day19.txt");
+    std::vector<std::string> inputs20 = linesFromFile<std::string>("Input/Day20.txt");
+    std::vector<std::string> inputs21 = linesFromFile<std::string>("Input/Day21.txt");
     std::vector<std::string> inputs22 = linesFromFile<std::string>("Input/Day22.txt");
+    std::vector<std::string> inputs24 = linesFromFile<std::string>("Input/Day24.txt");
 
     //std::cout << "Day 1 Star 1: " << day1star1(inputs1) << std::endl;
     //std::cout << "Day 1 Star 2: " << day1star2(inputs1) << std::endl;
@@ -74,6 +75,8 @@ int main()
     //std::cout << "Day 21 Star 2: " << day21star2(inputs21) << std::endl;
     //std::cout << "Day 22 Star 1: " << day22star1(inputs22) << std::endl;
     //std::cout << "Day 22 Star 2: " << day22star2(inputs22) << std::endl;
-    std::cout << "Day 23 Star 1: " << day23star1("872495136") << std::endl;
-    std::cout << "Day 23 Star 2: " << day23star2("872495136") << std::endl;
+    //std::cout << "Day 23 Star 1: " << day23star1("872495136") << std::endl;
+    //std::cout << "Day 23 Star 2: " << day23star2("872495136") << std::endl;
+    std::cout << "Day 24 Star 1: " << day24star1(inputs24) << std::endl;
+    std::cout << "Day 24 Star 2: " << day24star2(inputs24) << std::endl;
 }
