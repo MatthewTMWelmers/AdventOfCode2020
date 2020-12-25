@@ -77,6 +77,7 @@ int main()
     //std::cout << "Day 22 Star 2: " << day22star2(inputs22) << std::endl;
     //std::cout << "Day 23 Star 1: " << day23star1("872495136") << std::endl;
     //std::cout << "Day 23 Star 2: " << day23star2("872495136") << std::endl;
-    std::cout << "Day 24 Star 1: " << day24star1(inputs24) << std::endl;
-    std::cout << "Day 24 Star 2: " << day24star2(inputs24) << std::endl;
+    //std::cout << "Day 24 Star 1: " << day24star1(inputs24) << std::endl;
+    //std::cout << "Day 24 Star 2: " << day24star2(inputs24) << std::endl;
+    std::cout << "Day 25 " << day25() << std::endl;
 }
